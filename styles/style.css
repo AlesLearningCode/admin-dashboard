@@ -1,0 +1,135 @@
+::root{
+    --sidebar-font: Rubik, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    height: 100vh;
+    font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: Rubik;
+    src: url(/fonts/Rubik-VariableFont_wght.ttf);
+}
+.sidebar{
+    grid-row: 1/3;
+    background-color: #64748b;
+    color: white;
+    font-family: var(--sidebar-font);
+    display:grid;
+    align-content:start;
+    row-gap: 40px;
+    padding: 40px 40px;
+
+}
+.branding{
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+}
+.sidebar ul,
+.sidebar ul li{
+    list-style-type: none;
+    grid-column: 2/3;
+}
+.logo{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5px;
+    align-items: center;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    grid-column: 1/2;
+    justify-self: flex-start;
+}
+ul img{
+    width: 60px;
+    height: 30px;
+    grid-column: 1/2;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:#450a0a;
+}
+.nav-bar,
+.nav-branding{
+    font-size: 1.5rem;
+    display:grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 20px;
+    column-gap: 5px;
+}
+.header{
+    grid-column: 2/3;
+    background-color: #1e293b;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 5px 10px 20px black ;
+}
+.header-up{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-items: center;
+}
+input[type="search"]{
+    height: 40px;
+    width: 500px;
+    border-radius: 20px;
+    border: #450a0a solid 2px;
+    padding-left: 10px;
+    justify-self: start;
+}
+input[type="search"]:focus{
+    background-color:#cbd5e1;
+    border: #334155;
+}
+.header-up label{
+    position: relative;
+}
+.header-up .left-side-header img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 450px;
+    bottom: -8px;
+}
+.right-side-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.right-side-header img{
+    width: 30px;
+    height: 30px;
+}
+.right-side-header img[alt="Profile picture"]{
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+}
+.header-down{
+    grid-row: 2/3;
+    margin-right: 30px;
+}
+.header-down button{
+    height: 40px;
+}
+.content{
+    grid-column: 2/3;
+    background-color: #e2e8f081;
+}
