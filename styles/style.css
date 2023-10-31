@@ -24,14 +24,9 @@ body{
     color: white;
     font-family: var(--sidebar-font);
     display:grid;
-    align-content:start;
-    row-gap: 40px;
-    padding: 40px 40px;
-
 }
 .branding{
    grid-template-columns: 1fr 2fr;
-   align-items: center;
 }
 .sidebar ul,
 .sidebar ul li{
@@ -42,19 +37,20 @@ body{
     font-size: 2rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 5px;
     align-items: center;
+    column-gap: 5px;
 }
 .logo img{
     width: 60px;
     height: 60px;
     grid-column: 1/2;
-    justify-self: flex-start;
+    justify-self: end;
 }
 ul img{
     width: 60px;
     height: 30px;
     grid-column: 1/2;
+    justify-self: end;
 }
 a{
     text-decoration: none;
@@ -69,7 +65,7 @@ a:hover{
     display:grid;
     align-items: center;
     grid-template-columns: 1fr 2fr;
-    row-gap: 20px;
+    row-gap: 10px;
     column-gap: 5px;
 }
 .header{
